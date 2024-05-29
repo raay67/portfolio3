@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="script" href="script.js">
+    <title>Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "GrqyX2C1rOBivqb8d",
+      });
+   })();
+</script>
+</head>
+<body>
+<header>
+    <div class="TheLine"></div>
+    <nav>
+        <h2><<span>/</span><span class="the-r">R</span>></h2>
+        <ul>
+            <li><a class="Hom" href="#">Home</a></li>
+            <li><a href="indexx.html">Skills</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="icons">
+            <a class="icon" href="https://github.com/rayanayan"><img class="imm" src="img/github.png" alt="GitHub"></a>
+            <a class="icon" href="#"><img class="im" src="img/linked.png" alt="LinkedIn"></a>
+            <a class="icon" href="#"><img class="im"src="img/twitter.png" alt="Twitter"></a>
+            <a class="icon" href="#"><img class="im" src="img/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="intro">
+            <div class="mi">
+            <h3 class="hi"><span >hi</span>, my name is</h3>
+            <h3 class="name">Rayan Khaled</h3>
+            <h3 class="soft">Software <span class="carrer">Developer/Engineer.</span></h3>
+            <button>Contact Me!</button>  
+        </div>
+        </div>
+    </section>
+</header>
+
+<div class="about" >
+    <h6 class="about-me">About Me</h6>
+    <p class="story">I'm <span class="story-name">Ryan</span>, a software developer based in Turkey, where I design and develop complex web applications. My love for technology and innovation keeps me constantly learning and improving. I'm naturally problem-solving oriented, which keeps me engaged and motivated. The tangible results of my efforts, seen through interactive websites and sophisticated software, drive my passion further. I'm always excited for new challenges in the field.</p>
+    <div id="three"></div>
+</div>
+<div class="skill-section">
+    <h6 class="skill">My Skills</h6>
+    <div class="skills">
+        <img id="icon" src="img/js.png" alt="JavaScript">
+        <img id="icon" src="img/jpeg-optimizer_css.png" alt="CSS3">
+        <img id="icon" src="img/html.png" alt="HTML5">
+        <img id="icon" src="img/three.png" alt="Three.js">
+        <img id="icon" src="img/py.png" alt="Python">
+    </div>
+</div>
+<div class="contact">
+
+    <form onsubmit="SendEmail(); reset(); return false;">
+    <input class="input" type="text" placeholder="Your name" id="name-input" required ><br>
+    <input class="input" type="email" placeholder="Yore email" name="" id="email"required><br>
+    <input class="input" type="text" placeholder="information" id="information"required><br>
+    <button ">Send</button>
+</form>
+</div>
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+  "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"    
+}
+    }
+</script>
+
+
+<script type="module" src="script.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>

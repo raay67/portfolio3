@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10,100..900&display=swap');
+
+
+:root{
+   --clr-neon : hsl(0, 0%, 81%) 
+}
+*{
+
+    box-sizing: content-box;
+    font-family: "Inter";
+    color: #CECECE ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+@keyframes control-width{
+    from{
+        width: 0px;
+    }
+    
+    to{
+        width: 500px;
+    }
+}
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+:root{
+    --main-color: rgb(255 255 255 / 80%)
+}
+body {
+    background-color:rgb(14, 14, 14); /* Set a fallback background color */
+}
+.bg-loaded {
+    background-image: url(img/jpeg-optimizer_geometric_pattern_111.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+     /* Optional */
+}
+/* body{
+    /* /* background-image: url(img/jpeg-optimizer_geometric_pattern_111.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover; */
+    /* background-color: rgb(83, 83, 83); */ 
+    
+::selection{
+    background-color: #00ADB5 ;
+    color:#CECECE ;
+}
+header{
+
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align:start ;
+    scroll-snap-type: mandatory;
+
+
+}
+main .intro{
+    padding-top:150px;
+    padding-left: 300px;
+}
+.intro{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 300px;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0 ;
+    padding-top:  22px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+h2{
+    
+    cursor: pointer;
+}
+nav ul{
+
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+}
+nav ul li {
+
+    display: inline-block;
+    margin: 10px 20px;
+}
+h1{
+    font-size: 19px;
+}
+.Hom {
+    color:#00ADB5 ;
+}
+h1{
+    font-weight: 400;
+}
+h2{
+    padding-left: 150px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.the-r{
+    color:#00ADB5 ;
+}
+div{
+    display: block;
+}
+section{
+    display: flex;
+
+}
+
+.input-main{
+    width:20%;
+    padding-left: 54px;
+    min-height: 100vh;
+    display:grid;
+    align-items: center;
+}
+
+.cont{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.de{
+    padding-bottom: 22px;
+    width: 500px;
+    font-size: 20px;
+}
+
+.send {
+
+    border: 3px solid #00ADB5;
+    width: 109px;
+    height: 35px;
+    border-radius: 10px;
+    background: none;
+    color: #CECECE;
+    margin-top: 27px;
+    text-shadow: 0 0 0.45em #CECECE;
+    box-shadow: inset 0 0 0.5em 0 #00ADB5, 0 0 0.5em 0 #00ADB5 ;
+}
+.send:hover{
+    border: 3px solid #CECECE;
+    width: 109px;
+    height: 35px;
+    border-radius: 10px;
+    background: none;
+    color: #00ADB5;
+    margin-top: 27px;
+    text-shadow: 0 0 0.45em #00ADB5;
+    box-shadow: inset 0 0 0.5em 0 #CECECE, 0 0 0.5em 0 #CECECE;
+}
+.x{
+    display: grid;
+    place-content: end;
+    padding-right: 20px;
+}
+
+.main{
+    width:80% ;
+    min-height: 10vh;
+    display:inline-grid;
+    align-items: center;
+}
+.mas {
+    padding-bottom: 75px;
+    height: 130px ;
+}
+h3 {
+    font-weight: 400;
+    font-size: 17px;
+}
+.soft{
+    font-weight: 700;
+    font-size: 50px;
+}
+.soft span {
+    display: inline-flex;
+    color:#00ADB5 ;
+    width: 500px;
+    border-right: 3px solid var(--main-color);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: control-width  2s steps(19) both ,
+    cursor .6s step-end infinite alternate;
+
+}
+
+.name{
+    font-weight: 700;
+    font-size: 40px;
+}
+.hi span{
+
+    color:#00ADB5 ;
+}
+.hi{
+    padding-bottom: 10px;
+    position: relative;
+    top: 10px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+
+.icons{
+    position: absolute;
+    
+    left: 63px;
+    top: 200px;
+
+}
+.im{
+    width: 24px;
+    padding-top: 15px;
+}
+.imm{
+    position: relative;
+    right: 2px;
+    width: 28px !important;
+}
+.icon  {
+    object-fit: cover;
+    display:flex;
+    width: 10px;
+
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+  }
+
+  .TheLine {
+    position: absolute; 
+    margin-left: 74px;
+    width: 196px;
+    height: 180px;
+    border-left:3px solid #CECECE;
+    float: left;
+    
+}
+
+h6{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 00px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    position: relative;
+    margin-top:100px;
+}
+
+.ee{
+    
+    width: 188px;
+}
+
+
+
+#icon{
+    margin-left: 60px;
+    padding-top: 49px;
+    padding: 22px;
+    display: inline-flex;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+.about{
+    position: relative;
+    top: 100px;
+}
+.story{
+    font-size: 30px;
+    width: 940px;
+    
+
+}
+
+
+#three{
+    position: relative;
+    bottom: 200px;
+    left: 60%;
+    width: 700px;
+
+}
+.show {
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.story{
+        position: relative;
+        top: 250px;
+        padding-left: 50px;
+}
+.story-name{
+    color: #00ADB5;
+}
+button{
+    position: relative;
+    top:20px;
+    padding:13px 25px 13px 25px;
+
+    background-color:#00ADB5 ;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    position: relative;
+    top:20px;
+    padding:13px 25px 13px 25px;
+    background-color:#00ADB5 ;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    text-shadow:  0 0 .6em #D9D9D9,0 0 .6em #D9D9D9;
+}
+.contact{
+    padding-bottom: 200px;
+    margin-right: 100px;
+    margin-top: 100px;
+    float: right;
+}
+input{
+    display: inline;
+    padding-left: 19px;
+    width: 600px;
+    height: 69px;
+    border-radius: 5px;
+    margin-top: 19px;
+    color: #D9D9D9;
+    background-color: rgb(42,42,42);
+    font-size: 17px;
+    border:none;
+}
+.input{
+
+    
+}
+#information{
+    padding-bottom: 250px;
+    height: 300px;
+
+}
